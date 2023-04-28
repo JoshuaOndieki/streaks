@@ -1,0 +1,102 @@
+:root {
+    --red-button: #D13438;
+    --theme-background: #FF7F50;
+    --theme-gray: #D1D1CB;
+    --blue-button: #0078D4;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    justify-content: space-between;
+    margin: 0;
+}
+
+header {
+    align-items: center;
+    background-color: var(--theme-background);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    min-height: 10svh;
+    padding: 1rem;
+}
+
+#app {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+#add-streak {
+    background-color: var(--blue-button);
+    color: white;
+    height: 2rem;
+    padding: 0 1rem;
+}
+
+
+.app-activity {
+    align-items: center;
+    border: 1px solid var(--theme-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 18rem;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 18rem;
+}
+
+.activity-title {
+    /* text-align: center; */
+}
+
+.activity-image-div {
+    height: 100px;
+    /* flex: 1; */
+    width: 100px;
+}
+
+.activity-image {
+    height: 100%;
+    width: 100%;
+}
+
+.activity-details {
+    font-size: 1rem;
+}
+
+.activity-timestamp {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.activity-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.activity-delete {
+    background-color: var(--red-button);
+    color: white;
+}
+
+
+footer {
+    background-color: var(--theme-gray);
+    text-align: center;
+}
