@@ -83,6 +83,10 @@ ion-icon {
     justify-content: center;
 }
 
+.activity-timestamp-date {
+    color: darkgray;
+}
+
 .activity-actions {
     display: flex;
     gap: 0.5rem;
@@ -94,9 +98,17 @@ ion-icon {
     color: white;
 }
 
+.activity-delete:hover {
+    background-color: #e91e63;
+}
+
 .activity-update {
     background-color: var(--blue-button);
     color: white;
+}
+
+.activity-update:hover, #add-streak:hover {
+     background-color: #3f51b5;
 }
 
 .check-activity-div {
