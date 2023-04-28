@@ -17,13 +17,13 @@ class Activity{
                     <div class="activity-image-div"><img src="${imgSrc}" alt="no image placeholder" class="activity-image"></div>
                     <div class="activity-details">
                         <div class="activity-timestamp">
-                            <div class="activity-timestamp-date">Last done: ${activity.timestamp}</div>
+                            <div class="activity-timestamp-date">Last done: </br> ${activity.timestamp}</div>
                             <div class="activity-timestamp-days">activity.timestamp</div>
                         </div>
                     </div>
                     <div class="activity-actions">
                         <ion-icon name="checkmark-done-circle" size="large"></ion-icon>
-                        <button class="activity-delete")>Delete Activity</button>
+                        <button class="activity-delete" onClick="new Activity().deleteActivity(${activity.id})">Delete Activity</button>
                     </div>
                 </div>
         `
