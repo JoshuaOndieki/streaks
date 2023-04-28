@@ -1,5 +1,28 @@
 {
-    "activities": [
-        
-    ]
+  "activities": [
+    {
+      "id": 1,
+      "title": "Enough sleep",
+      "img": "",
+      "timestamp": "Fri Apr 28 2023 11:48:37 GMT+0300 (East Africa Time)"
+    },
+    {
+      "id": 2,
+      "title": "Healthy eating",
+      "img": "",
+      "timestamp": "Fri Apr 28 2023 11:48:37 GMT+0300 (East Africa Time)"
+    },
+    {
+      "title": "play",
+      "img": "",
+      "timestamp": "Fri Apr 28 2023 11:48:37 GMT+0300 (East Africa Time)",
+      "id": 3
+    },
+    {
+      "title": "laugh",
+      "img": "",
+      "timestamp": "Fri Apr 28 2023 11:48:37 GMT+0300 (East Africa Time)",
+      "id": 4
+    }
+  ]
 }
