@@ -38,6 +38,10 @@ button {
     cursor: pointer;
 }
 
+ion-icon {
+    cursor: pointer;
+}
+
 #add-streak {
     background-color: var(--blue-button);
     color: white;

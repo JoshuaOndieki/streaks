@@ -28,7 +28,7 @@ class Activity{
                     <div class="activity-actions">
                         <div class="check-activity-div">
                             <div>done today?</div>
-                            <ion-icon name="checkmark-done-circle" size="large"></ion-icon>
+                            <ion-icon name="checkmark-done-circle" size="large" onClick="new Activity().updateActivity(${activity.id})"></ion-icon>
                             </div>
                         <button class="activity-delete" onClick="new Activity().deleteActivity(${activity.id})">Delete Activity</button>
                     </div>
@@ -58,6 +58,16 @@ class Activity{
     async deleteActivity(id:string){
         await fetch(`http://localhost:3000/activities/${id}`, {
             method:'DELETE',
+            headers:{
+                "Content-Type": "application/json"
+            }
+        })
+    }
+
+    async updateActivity(id:string) {
+        await fetch(`http://localhost:3000/activities/${id}`, {
+            method:'PATCH',
+            body:JSON.stringify({timestamp: (new Date).toString()}),
             headers:{
                 "Content-Type": "application/json"
             }
