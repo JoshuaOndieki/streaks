@@ -38,6 +38,10 @@ button {
     cursor: pointer;
 }
 
+ion-icon {
+    cursor: pointer;
+}
+
 #add-streak {
     background-color: var(--blue-button);
     color: white;
@@ -93,6 +97,11 @@ button {
 .activity-delete {
     background-color: var(--red-button);
     color: white;
+}
+
+.check-activity-div {
+    align-items: center;
+    display: flex;
 }
 
 
