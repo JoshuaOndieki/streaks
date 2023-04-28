@@ -21,7 +21,7 @@ class Activity{
                     <div class="activity-image-div"><img src="${imgSrc}" alt="no image placeholder" class="activity-image"></div>
                     <div class="activity-details">
                         <div class="activity-timestamp">
-                            <div class="activity-timestamp-date">Last done: </br> ${activity.timestamp}</div>
+                            <div class="activity-timestamp-date">Last done: ${activity.timestamp}</div>
                             <div class="activity-timestamp-days">${days} days ago</div>
                         </div>
                     </div>
@@ -107,6 +107,7 @@ let addStreakForm = document.getElementById('add-streak-form') as HTMLFormElemen
 addStreakForm.addEventListener('submit', (e)=>{
     e.preventDefault()
     let newActivityTitle = document.getElementById('new-activity-title') as HTMLInputElement
+    let newActivityDate = document.getElementById('new-activity-date') as HTMLInputElement
     // let date = new Date();
     
     // let day = date.getDate().toString();    
@@ -116,9 +117,22 @@ addStreakForm.addEventListener('submit', (e)=>{
     let activity:IActivity = {
         title: newActivityTitle.value,
         img: "",
-        timestamp: `${(new Date()).toString()}`
+        timestamp: newActivityDate.value
     }
     new Activity().addActivity(activity)
 })
+
+
+let dateInput = document.getElementById('new-activity-date') as HTMLInputElement
+
+console.log(dateInput.value);
+
+dateInput.addEventListener('change', ()=> {
+    console.log(dateInput.value);
+    console.log(new Date(dateInput.value));
+    
+    
+})
+
 
 App.render()
