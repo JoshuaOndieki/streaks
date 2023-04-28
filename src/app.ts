@@ -11,6 +11,10 @@ class Activity{
         // let date:Date = new Date()
         // let diffInMilliseconds = Math.abs(date - Date.parse(activity.timestamp));
         // let diffInDays = Math.ceil(diffInMilliseconds / (1000 * 60 * 60 * 24));
+        let activityDate = new Date(activity.timestamp)
+        const milliseconds = Math.abs(activityDate.getTime() - (new Date()).getTime());
+        
+        const days = Math.round(milliseconds / 1000 / 60 / 60 / 24);
         let html = `
                 <div class="app-activity">
                     <h3 class="activity-title">${activity.title}</h3>
@@ -18,11 +22,14 @@ class Activity{
                     <div class="activity-details">
                         <div class="activity-timestamp">
                             <div class="activity-timestamp-date">Last done: </br> ${activity.timestamp}</div>
-                            <div class="activity-timestamp-days">activity.timestamp</div>
+                            <div class="activity-timestamp-days">${days} days ago</div>
                         </div>
                     </div>
                     <div class="activity-actions">
-                        <ion-icon name="checkmark-done-circle" size="large"></ion-icon>
+                        <div class="check-activity-div">
+                            <div>done today?</div>
+                            <ion-icon name="checkmark-done-circle" size="large"></ion-icon>
+                            </div>
                         <button class="activity-delete" onClick="new Activity().deleteActivity(${activity.id})">Delete Activity</button>
                     </div>
                 </div>

@@ -95,6 +95,11 @@ button {
     color: white;
 }
 
+.check-activity-div {
+    align-items: center;
+    display: flex;
+}
+
 
 footer {
     background-color: var(--theme-gray);
