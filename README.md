@@ -9,3 +9,12 @@ Streaks app is an application for tracking good Habits
 - `tsc`
 - `json-server db.json --watch`
 - Open **index.html** on a web browser
+
+## SCREENSHOTS
+### DESKTOP
+
+![DESKTOP DESIGN](/screenshots/desktop-design.png "DESKTOP DESIGN")
+
+### MOBILE
+
+![MOBILE DESIGN](/screenshots/mobile-design.png "MODILE DESIGN")
