@@ -10,12 +10,12 @@
 <body>
     <header>
         <h1 id="logo">Streaks App</h1>
-        <div id="app-description">Welcome to my Streak App. Track your streaks easily.</div>
+        <div id="app-description">Welcome to my Streak App. Track your habits easily.</div>
         <form action="" method="post" id="add-streak-form">
             <input type="hidden" name="new-activity-id" id="new-activity-id">
-            <input type="text" name="new-activity-title" id="new-activity-title" placeholder="Activity Title *">
+            <input required type="text" name="new-activity-title" id="new-activity-title" placeholder="Activity Title *">
             <label for="new-activity-date">Date last done *</label>
-            <input type="date" name="new-activity-date" id="new-activity-date">
+            <input required type="date" name="new-activity-date" id="new-activity-date">
             <button id="add-streak" type="submit">ADD STREAK</button>
         </form>
     </header>
